@@ -11,4 +11,5 @@ deployment:
   production:
     branch: "master"
     commands:
-      - printf "${name}\n${password}\n" | meteor deploy meteormentors.meteor.com
+      - printf "${name}\n${password}\n" | meteor login --email
+      - meteor deploy meteormentors.meteor.com
